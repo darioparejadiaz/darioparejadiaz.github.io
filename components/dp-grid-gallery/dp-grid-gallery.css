@@ -1,0 +1,112 @@
+/* **************** Component ************************* */
+
+:host {
+  --background-color: transparent;
+  --font-color: black;
+
+  --title-font-size: 84px;
+  --text-font-size: 21px;
+
+  --title-font-family: inherit;
+  --text-font-family: inherit;
+
+  --grid-columns: 3;
+  --grid-gap: 20px;
+
+  --component-margin-bottom: 64px;
+}
+
+:host {
+  width: 100%;
+  box-sizing: border-box;
+  display: block;
+}
+
+/* ************** Global ***************************** */
+
+p,
+h2 {
+  margin: 0;
+  text-align: center;
+  color: var(--font-color);
+  box-sizing: border-box;
+}
+
+.text {
+  font-family: var(--text-font-family);
+  font-size: var(--text-font-size);
+}
+
+.title {
+  font-family: var(--title-font-family);
+  font-size: var(--title-font-size);
+  margin-bottom: 24px;
+}
+
+/* ****************** Gallery ******************************* */
+
+.gallery {
+  width: 100%;
+  min-width: 320px;
+  max-width: 1800px;
+  padding: 24px;
+  box-sizing: border-box;
+  background-color: var(--background-color);
+
+  margin: 0 auto var(--component-margin-bottom) auto;
+}
+
+.grid-container {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(var(--grid-columns), 1fr);
+  gap: var(--grid-gap);
+  margin-top: 56px;
+}
+
+.grid-container img {
+  width: 100%;
+}
+
+/* ********************* Media queries******************************* */
+
+/************* desktop range 1200px - 1800px **********************/
+
+/************* tablet range 600px - 1200px*************************/
+
+@media screen and (max-width: 1200px) {
+  .text {
+    font-size: calc(var(--text-font-size) * 0.86);
+  }
+
+  .title {
+    font-size: calc(var(--title-font-size) * 0.86);
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .title {
+    font-size: calc(var(--title-font-size) * 0.46);
+  }
+
+  .gallery {
+    margin-bottom: 56px;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 24px;
+  }
+}
+
+/************* mobile range 320px - 600px***************************/
+
+@media screen and (max-width: 600px) {
+  .text {
+    font-size: calc(var(--text-font-size) * 0.76);
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}

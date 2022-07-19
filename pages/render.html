@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- ************************************************************************ -->
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Renders</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="/styles/render.css" />
+  </head>
+
+  <!-- ************************************************************************ -->
+
+  <body>
+    <!-- ************************************************************************ -->
+
+    <dp-header></dp-header>
+
+    <!-- ************************************************************************ -->
+
+    <dp-hero
+      heading="High Quality Photorealistic Renders"
+      description="Discover the most stylish designs for your dreamed spaces"
+      imgpath="/assets/renders/garden/Patio-2-Noche.jpg"
+    ></dp-hero>
+
+    <!-- ************************************************************************ -->
+
+    <section class="general-section swiper-section">
+      <h2 class="title">Gardens gallery</h2>
+      <!-- swiperjs Effect coverflow -->
+      <div class="coverflow-swipe-container">
+        <div class="swiper mySwiper">
+          <div id="coverflow-swiper-1" class="swiper-wrapper"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ************************************************************************ -->
+
+    <dp-grid-gallery
+      id="gallery-1"
+      heading="Offices Gallery"
+      description=""
+    ></dp-grid-gallery>
+
+    <!-- ************************************************************************ -->
+
+    <section class="general-section swiper-section">
+      <h2 class="title">Events gallery</h2>
+      <!-- swiperjs Effect coverflow -->
+      <div class="coverflow-swipe-container">
+        <div class="swiper mySwiper">
+          <div id="coverflow-swiper-2" class="swiper-wrapper"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ************************************************************************ -->
+
+    <dp-grid-gallery
+      id="gallery-2"
+      heading="Home Gallery"
+      description="Compare the same space through different visualizations so you can
+    decide what is better for you"
+    ></dp-grid-gallery>
+
+    <!-- ************************************************************************ -->
+
+    <dp-hero
+      heading="Floor plans"
+      description="Understand how the distribution of your space solve your necessities"
+      imgpath="/assets/renders/floor-plan/Planta-ambientada-Casa-Rio-Claro-2.jpg"
+    ></dp-hero>
+
+    <!-- ************************************************************************ -->
+
+    <dp-footer></dp-footer>
+
+    <!-- ************************************************************************ -->
+
+    <script type="module" src="../main.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script type="module" src="../js/render.js"></script>
+
+    <!-- ************************************************************************ -->
+  </body>
+</html>

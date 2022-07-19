@@ -1,0 +1,53 @@
+@import url("/style.css");
+
+/* ***************** Components ************************** */
+dp-header {
+  position: relative;
+  z-index: 2;
+}
+
+dp-hero {
+  position: relative;
+  z-index: 1;
+}
+
+dp-grid-gallery#gallery-1 {
+  --grid-columns: 3;
+  --grid-gap: 20px;
+}
+
+dp-grid-gallery#gallery-2 {
+  --grid-columns: 2;
+  --grid-gap: 20px;
+}
+/* ******************************************* */
+
+/* swiperjs Effect coverflow */
+
+.coverflow-swipe-container .swiper {
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.coverflow-swipe-container .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 50%;
+}
+
+.coverflow-swipe-container .swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+/* ******************************************* */
+
+/*************media queries*******************************/
+
+/* mobile range */
+
+@media screen and (max-width: 600px) {
+  .coverflow-swipe-container .swiper-slide {
+    width: 80%;
+  }
+}
