@@ -1,0 +1,206 @@
+/************* Imports ****************************************/
+
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap");
+
+/************* Global variables *******************************/
+
+:root {
+  /* Colors */
+
+  --orange-primary: #ff9500;
+
+  --orange-shade-1: #cc7700;
+  --orange-shade-2: #995900;
+  --orange-shade-3: #663c00;
+
+  --orange-tint-1: #ffaa33;
+  --orange-tint-2: #ffbf66;
+  --orange-tint-3: #ffd599;
+
+  --cold-gray-1: #666057;
+  --cold-gray-2: #8c867e;
+  --cold-gray-3: #b2afaa;
+  --cold-gray-4: #d9d4ce;
+
+  --warm-gray-1: #f2ede6;
+  --warm-gray-2: #f2e8da;
+  --warm-gray-3: #f2e3ce;
+  --warm-gray-4: #f2dec2;
+
+  --black: #262421;
+  --white: #f2f2f2;
+
+  --blue-complementary: #006eb3;
+
+  /* Desktop range: 1200px 1800px */
+  --large-font-size-000: 11px;
+  --large-font-size-00: 15px;
+  --large-font-size-0: 21px;
+  --large-font-size-1: 119px;
+  --large-font-size-2: 84px;
+  --large-font-size-3: 60px;
+  --large-font-size-4: 42px;
+  --large-font-size-5: 30px;
+  --large-font-size-6: 21px;
+
+  /* Tablet range: 600px 1200px */
+  --medium-font-size-000: 9px;
+  --medium-font-size-00: 13px;
+  --medium-font-size-0: 18px;
+  --medium-font-size-1: 102px;
+  --medium-font-size-2: 72px;
+  --medium-font-size-3: 51px;
+  --medium-font-size-4: 36px;
+  --medium-font-size-5: 25px;
+  --medium-font-size-6: 18px;
+
+  /* Mobile range: 320px 600px */
+  --small-font-size-000: 9px;
+  --small-font-size-00: 13px;
+  --small-font-size-0: 16px;
+  --small-font-size-1: 49px;
+  --small-font-size-2: 39px;
+  --small-font-size-3: 31px;
+  --small-font-size-4: 25px;
+  --small-font-size-5: 20px;
+  --small-font-size-6: 16px;
+}
+
+/********************** Reset ******************* */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/************ Font families and sizes ************* */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Cormorant Garamond", serif;
+}
+
+h1 {
+  font-size: var(--large-font-size-1);
+}
+
+h2 {
+  font-size: var(--large-font-size-2);
+}
+
+h3 {
+  font-size: var(--large-font-size-3);
+}
+
+h4 {
+  font-size: var(--large-font-size-4);
+}
+
+h5 {
+  font-size: var(--large-font-size-5);
+}
+
+h6 {
+  font-size: var(--large-font-size-6);
+}
+
+p,
+a,
+li,
+span {
+  font-family: "Raleway", sans-serif;
+  font-size: var(--large-font-size-0);
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.text {
+  margin-bottom: 24px;
+}
+
+.general-section {
+  margin-bottom: 64px;
+}
+
+/************* Components *******************************/
+
+dp-header {
+  --text-font-family: "Raleway", sans-serif;
+
+  --text-desktop-font-size: var(--large-font-size-0);
+  --text-tablet-font-size: var(--medium-font-size-0);
+  --text-mobile-font-size: var(--small-font-size-0);
+}
+
+dp-footer {
+  --text-font-family: "Raleway", sans-serif;
+  --text-desktop-font-size: var(--large-font-size-0);
+  --note-desktop-font-size: var(--large-font-size-00);
+
+  --text-tablet-font-size: var(--medium-font-size-0);
+  --note-tablet-font-size: var(--medium-font-size-00);
+
+  --text-mobile-font-size: var(--small-font-size-0);
+  --note-mobile-font-size: var(--small-font-size-00);
+}
+
+dp-hero {
+  --title-font-family: "Cormorant Garamond", serif;
+  --title-font-size: var(--large-font-size-2);
+  --text-font-family: "Raleway", sans-serif;
+  --text-font-size: var(--large-font-size-0);
+}
+
+dp-grid-gallery {
+  --title-font-size: var(--large-font-size-2);
+  --text-font-size: var(--large-font-size-0);
+
+  --title-font-family: "Cormorant Garamond", serif;
+  --text-font-family: "Raleway", sans-serif;
+}
+
+dp-full-hero {
+  --title-font-family: "Cormorant Garamond", serif;
+  --title-font-size: var(--large-font-size-2);
+
+  --text-font-family: "Raleway", sans-serif;
+  --text-font-size: var(--large-font-size-0);
+}
+
+/* ********************* Media queries******************************* */
+
+/************* Desktop range 1200px - 1800px **********************/
+
+/************* Tablet range 600px - 1200px *************************/
+
+@media screen and (max-width: 1200px) {
+  .text {
+    font-size: calc(var(--large-font-size-0) * 0.86);
+  }
+
+  .title {
+    font-size: calc(var(--large-font-size-2) * 0.86);
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .title {
+    font-size: calc(var(--large-font-size-2) * 0.46);
+  }
+}
+
+/************* Mobile range 320px - 600px ***************************/
+
+@media screen and (max-width: 600px) {
+  .text {
+    font-size: calc(var(--large-font-size-2) * 0.76);
+  }
+}

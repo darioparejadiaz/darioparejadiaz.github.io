@@ -1,0 +1,229 @@
+/* ****************** Component ************************* */
+
+:host {
+  /* Colors */
+  --component-background-color: transparent;
+  --button-1-color: #ff9500;
+  --button-2-color: #f0f0f0;
+
+  --title-font-color: black;
+  --text-font-color: black;
+
+  --title-large-font-size-1: 119px;
+  --title-large-font-size-2: 84px;
+  --title-large-font-size-3: 60px;
+
+  --title-medium-font-size-1: 102px;
+  --title-medium-font-size-2: 72px;
+  --title-medium-font-size-3: 51px;
+
+  --title-small-font-size-1: 49px;
+
+  --text-large-font-size-0: 21px;
+  --text-medium-font-size-0: 18px;
+  --text-small-font-size-0: 16px;
+
+  /* Font family */
+  --title-font-family: inherit;
+  --text-font-family: inherit;
+}
+
+:host {
+  width: 100%;
+  box-sizing: border-box;
+  display: block;
+}
+
+/* *********************** global ******************************** */
+
+h1,
+p {
+  text-align: center;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--text-font-color);
+}
+
+.title {
+  font-family: var(--title-font-family);
+  font-size: var(--title-large-font-size-1);
+  color: var(--title-font-color);
+
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.text {
+  font-family: var(--text-font-family);
+  font-size: var(--text-large-font-size-0);
+  color: var(--text-font-color);
+
+  text-align: center;
+}
+
+/* ********************************************************* */
+
+.hero-section {
+  width: 100%;
+  max-width: 1800px;
+
+  background-color: var(--component-background-color);
+  box-sizing: border-box;
+
+  margin: 0 auto;
+}
+
+.hero-container {
+  width: 100%;
+  padding: 24px 24px 56px 24px;
+  box-sizing: border-box;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.info-container {
+  width: 100%;
+  place-self: center;
+}
+
+.info-container p {
+  width: 80%;
+  margin: 0 auto 24px auto;
+}
+
+img {
+  width: 100%;
+}
+
+/* ******************** Buttons ************************ */
+
+.buttons-container {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  gap: 16px;
+  place-content: center;
+}
+
+.btn {
+  padding: 12px 24px;
+  border-width: 0;
+  border-radius: 8px;
+  cursor: pointer;
+
+  font-family: var(--text-font-family);
+  font-size: var(--text-large-font-size-0);
+
+  /* display: inline-block; */
+}
+
+.btn:active {
+  position: relative;
+  top: 1px;
+}
+
+.btn-1 {
+  background-color: var(--button-1-color);
+}
+
+.btn-2 {
+  background-color: var(--button-2-color);
+}
+
+/* ******************* Media queries *************************** */
+
+/************* Desktop range 1200px - 1800px *****************/
+
+@media screen and (max-width: 1800px) {
+  .title {
+    font-size: var(--title-medium-font-size-1);
+  }
+}
+
+@media screen and (max-width: 1541px) {
+  .title {
+    font-size: var(--title-large-font-size-2);
+  }
+}
+
+@media screen and (max-width: 1278px) {
+  .title {
+    font-size: var(--title-medium-font-size-2);
+  }
+}
+
+/************* Tablet range 600px - 1200px *****************/
+
+@media screen and (max-width: 1200px) {
+  .text {
+    font-size: var(--text-medium-font-size-0);
+  }
+
+  .btn {
+    font-size: var(--text-medium-font-size-0);
+  }
+}
+
+@media screen and (max-width: 1102px) {
+  .title {
+    font-size: var(--title-large-font-size-3);
+  }
+}
+
+@media screen and (max-width: 926px) {
+  .title {
+    font-size: var(--title-medium-font-size-3);
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .hero-container {
+    display: block;
+  }
+
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0.6),
+        rgba(255, 255, 255, 1)
+      ),
+      url("/assets/imgs/web-developer.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .title {
+    font-size: var(--title-medium-font-size-2);
+  }
+
+  img {
+    display: none;
+  }
+}
+
+/************* Mobile range 320px - 600px *****************/
+
+@media screen and (max-width: 600px) {
+  .title {
+    font-size: var(--title-small-font-size-1);
+  }
+
+  .text {
+    font-size: var(--text-small-font-size-0);
+  }
+
+  .btn {
+    font-size: var(--text-small-font-size-0);
+  }
+}
+
+@media screen and (max-width: 341px) {
+  .buttons-container {
+    grid-template-columns: max-content;
+  }
+}

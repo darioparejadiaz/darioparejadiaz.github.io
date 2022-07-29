@@ -26,16 +26,18 @@ class DpHeader extends HTMLElement {
         <nav class="nav-container">
           <img class="hamburguer-menu" src="/components/dp-header/assets/menu.svg" />
           <ul  class="menu-long">
-            <li><a href="/pages/render.html">Renders</a></li>
-            <li><a href="/pages/photography.html">Photography</a></li>
-            <li><a href="/pages/about-me.html">About Me</a></li>
-            <li><a href="/pages/contact.html">Contact</a></li>
+            <li><a class="text" href="/pages/web-dev.html">Web Dev</a></li>
+            <li><a class="text" href="/pages/render.html">Renders</a></li>
+            <li><a class="text" href="/pages/photography.html">Photography</a></li>
+            <li><a class="text" href="/pages/about-me.html">About Me</a></li>
+            <li><a class="text" href="/pages/contact.html">Contact</a></li>
           </ul>
           <ul  class="menu-compressed">
-            <li><a href="/pages/render.html">Renders</a></li>
-            <li><a href="/pages/photography.html">Photography</a></li>
-            <li><a href="/pages/about-me.html">About Me</a></li>
-            <li><a href="/pages/contact.html">Contact</a></li>
+            <li><a class="text" href="/pages/web-dev.html">Web Dev</a></li>
+            <li><a class="text" href="/pages/render.html">Renders</a></li>
+            <li><a class="text" href="/pages/photography.html">Photography</a></li>
+            <li><a class="text" href="/pages/about-me.html">About Me</a></li>
+            <li><a class="text" href="/pages/contact.html">Contact</a></li>
           </ul>
         </nav>
         <ul class="social-container">

@@ -1,9 +1,9 @@
-@import url("/style.css");
+@import url("/global.css");
 
 /* **************** Component ******************* */
 
 dp-hero {
-  --background-color: #050505;
+  --component-background-color: #050505;
   --title-font-size: 75px;
 
   position: relative;
@@ -16,8 +16,8 @@ dp-header {
 }
 
 dp-grid-gallery {
-  --background-color: #050505;
-  --font-color: white;
+  --component-background-color: #050505;
+  --title-color: white;
 
   --grid-columns: 2;
 }

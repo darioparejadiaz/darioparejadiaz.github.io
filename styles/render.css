@@ -1,6 +1,6 @@
-@import url("/style.css");
+@import url("/global.css");
 
-/* ***************** Components ************************** */
+/* ***************** Components ****************** */
 dp-header {
   position: relative;
   z-index: 2;
@@ -9,6 +9,10 @@ dp-header {
 dp-hero {
   position: relative;
   z-index: 1;
+}
+
+dp-grid-gallery {
+  margin-bottom: 64px;
 }
 
 dp-grid-gallery#gallery-1 {
@@ -40,11 +44,9 @@ dp-grid-gallery#gallery-2 {
   width: 100%;
 }
 
-/* ******************************************* */
+/*************media queries************************/
 
-/*************media queries*******************************/
-
-/* mobile range */
+/* mobile range 320px - 600px */
 
 @media screen and (max-width: 600px) {
   .coverflow-swipe-container .swiper-slide {

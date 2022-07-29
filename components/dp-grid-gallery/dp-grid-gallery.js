@@ -21,7 +21,7 @@ class DpGridGallery extends HTMLElement {
   getTemplate() {
     const template = document.createElement("template");
     template.innerHTML = `
-        <section class="gallery">
+        <section class="gallery-section">
             <h2 class="title">${this.heading}</h2>
             <p class="text">${this.description}</p>
             <div class="grid-container"></div>

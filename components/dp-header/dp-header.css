@@ -1,63 +1,61 @@
-/*************Component*******************************/
+/************* Component *******************************/
 
 :host {
-  --background-color: white;
-  --font-color: black;
-  --font-style: inherit;
+  /* Colors */
+  --component-background-color: white;
+  --text-color: black;
 
-  /* Desktop */
-  --d-note-size: 15px;
-  --d-paragraph-size: 21px;
+  /* Desktop font sizes*/
+  --text-desktop-font-size: 21px;
 
-  /* Tablet */
-  --t-note-size: 13px;
-  --t-paragraph-size: 18px;
+  /* Tablet font sizes*/
+  --text-tablet-font-size: 18px;
 
-  /* mobile */
-  --m-note-size: 13px;
-  --m-paragraph-size: 16px;
+  /* mobile font sizes*/
+  --text-mobile-font-size: 16px;
+
+  /* Font family */
+  --text-font-family: inherit;
 }
 
 :host {
   width: 100%;
   border-bottom: 1px solid #cecece;
+  box-sizing: border-box;
   display: block;
 }
 
-/*************Global*******************************/
-
-p,
-a,
-span,
-ul,
-li {
-  color: var(--font-color);
-  font-family: var(--font-style);
-  font-size: var(--d-paragraph-size);
-  padding: 0;
-
-  margin: 0;
-  text-align: center;
-}
+/************* Global *******************************/
 
 a {
   text-decoration: none;
 }
 
 a:visited {
-  color: var(--font-color);
+  color: var(--text-color);
 }
 
 ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-/*************Header*******************************/
+.text {
+  color: var(--text-color);
+  font-family: var(--text-font-family);
+  font-size: var(--text-desktop-font-size);
+
+  text-align: center;
+  margin: 0;
+}
+
+/************* Header *******************************/
 
 header {
   width: 100%;
   padding: 12px;
-  background-color: var(--background-color);
+  background-color: var(--component-background-color);
   box-sizing: border-box;
 
   display: grid;
@@ -71,10 +69,10 @@ header {
   max-width: 1800px;
 
   display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-columns: 1fr 5fr 1fr;
 }
 
-/*************Logo*******************************/
+/************* Logo *******************************/
 
 .logo-link {
   justify-self: start;
@@ -85,7 +83,7 @@ header {
   width: 56px;
 }
 
-/*************nav*******************************/
+/************* Navigation *******************************/
 
 .nav-container {
   place-self: center;
@@ -98,7 +96,7 @@ header {
 
 .menu-long {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 16px;
   place-items: center;
 }
@@ -106,7 +104,7 @@ header {
 .menu-compressed {
   display: none;
   width: 100%;
-  background-color: var(--background-color);
+  background-color: var(--component-background-color);
 
   position: absolute;
   top: 100%;
@@ -117,7 +115,7 @@ header {
   margin-bottom: 20px;
 }
 
-/*************social media*******************************/
+/************* Social Media *******************************/
 
 .social-container {
   justify-self: end;
@@ -132,7 +130,7 @@ header {
   width: 24px;
 }
 
-/*************utils*******************************/
+/************* Utils *******************************/
 
 .hidden {
   display: none;
@@ -140,23 +138,20 @@ header {
 
 .visible {
   display: grid;
+  place-items: center;
 }
 
-/*************media queries*******************************/
+/************* Media Queries *******************************/
 
-/* tablet range */
+/************* Tablet range 600px - 1200px *****************/
 
 @media screen and (max-width: 1200px) {
-  p,
-  a,
-  span,
-  ul,
-  li {
-    font-size: var(--t-paragraph-size);
+  .text {
+    font-size: var(--text-tablet-font-size);
   }
 }
 
-@media screen and (max-width: 690px) {
+@media screen and (max-width: 800px) {
   .hamburguer-menu {
     display: block;
   }
@@ -166,14 +161,10 @@ header {
   }
 }
 
-/* mobile range */
+/************* Mobile range 320px - 600px *********************/
 
 @media screen and (max-width: 600px) {
-  p,
-  a,
-  span,
-  ul,
-  li {
-    font-size: var(--m-paragraph-size);
+  .text {
+    font-size: var(--text-mobile-font-size);
   }
 }
