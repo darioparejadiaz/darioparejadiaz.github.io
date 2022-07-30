@@ -8,7 +8,7 @@ class DpHeader extends HTMLElement {
     this.addEventListener("click", this.toggleMenu);
 
     window.addEventListener("resize", (e) => {
-      if (e.target.innerWidth >= 690) {
+      if (e.target.innerWidth > 800) {
         const menu = this.shadowRoot.querySelector(".menu-compressed");
         menu.classList.remove("visible");
         menu.classList.add("hidden");

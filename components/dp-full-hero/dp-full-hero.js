@@ -29,8 +29,8 @@ class DpFullHero extends HTMLElement {
             <h1 class="title">${this.heading}</h1>
             <p class="text">${this.description}</p>
             <div class="buttons-container">
-                <button class="btn btn-1"><a href="${this.btn1href}">${this.btn1text}</a></button>
-                <button class="btn btn-2"><a href="${this.btn2href}">${this.btn2text}</a></button>
+                <button class="btn btn-1"><a class="text" href="${this.btn1href}">${this.btn1text}</a></button>
+                <button class="btn btn-2"><a class="text" href="${this.btn2href}">${this.btn2text}</a></button>
             </div>
           </div>
           <img src="${this.imgpath}" />

@@ -2,6 +2,8 @@
 
 /* ***************** Components ****************** */
 dp-header {
+  --shadow-elevation-high: 0;
+
   position: relative;
   z-index: 2;
 }

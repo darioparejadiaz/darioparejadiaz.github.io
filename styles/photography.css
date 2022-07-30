@@ -1,6 +1,12 @@
 @import url("/global.css");
 
 /* **************** Component ******************* */
+dp-header {
+  --shadow-elevation-high: 0;
+
+  position: relative;
+  z-index: 2;
+}
 
 dp-hero {
   --component-background-color: #050505;
@@ -8,11 +14,6 @@ dp-hero {
 
   position: relative;
   z-index: 1;
-}
-
-dp-header {
-  position: relative;
-  z-index: 2;
 }
 
 dp-grid-gallery {
@@ -26,31 +27,4 @@ dp-grid-gallery {
 
 body {
   background-color: #050505;
-}
-
-.photo-grid {
-  width: 100%;
-  background-color: black;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-areas: "one hero two";
-}
-
-.photo-grid img {
-  width: 100%;
-  display: block;
-}
-
-.photo-grid img:nth-child(1) {
-  grid-area: one;
-}
-
-.photo-grid img:nth-child(2) {
-  grid-area: two;
-}
-
-.photo-grid h2 {
-  color: white;
-  grid-area: hero;
-  place-self: center;
 }
