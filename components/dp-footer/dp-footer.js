@@ -35,10 +35,10 @@ class DpFooter extends HTMLElement {
         
             <ul class="site-map">
               <li><a class="text" href="/index.html">Home</a></li>
-              <li><a class="text" href="/pages/web-dev.html">Web-Dev</a></li>
+              <li><a class="text" href="/pages/web-dev.html">Web Dev</a></li>
               <li><a class="text" href="/pages/render.html">Renders</a></li>
               <li><a class="text" href="/pages/photography.html">Photography</a></li>
-              <li><a class="text" href="/pages/about-me.html">About-Me</a></li>
+              <li><a class="text" href="/pages/about-me.html">About Me</a></li>
               <li><a class="text" href="/pages/contact.html">Contact</a></li>
             </ul>
           

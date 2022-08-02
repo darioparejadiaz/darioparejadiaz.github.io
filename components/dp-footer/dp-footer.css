@@ -105,6 +105,7 @@ footer {
 /************* Site map *******************************/
 
 .site-map {
+  width: 100%;
   justify-self: center;
 
   display: grid;
@@ -194,7 +195,6 @@ footer {
 
 @media screen and (max-width: 450px) {
   .site-map {
-    width: 100%;
     grid-template-columns: 1fr;
   }
 
