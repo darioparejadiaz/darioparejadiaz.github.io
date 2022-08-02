@@ -126,7 +126,11 @@ span {
   margin-bottom: 24px;
 }
 
-.general-section {
+.section {
+  max-width: 1800px;
+  padding: 24px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 64px;
 }
 
@@ -181,26 +185,4 @@ dp-full-hero {
 
 /************* Tablet range 600px - 1200px *************************/
 
-@media screen and (max-width: 1200px) {
-  .text {
-    font-size: calc(var(--large-font-size-0) * 0.86);
-  }
-
-  .title {
-    font-size: calc(var(--large-font-size-2) * 0.86);
-  }
-}
-
-@media screen and (max-width: 1080px) {
-  .title {
-    font-size: calc(var(--large-font-size-2) * 0.46);
-  }
-}
-
 /************* Mobile range 320px - 600px ***************************/
-
-@media screen and (max-width: 600px) {
-  .text {
-    font-size: calc(var(--large-font-size-2) * 0.76);
-  }
-}
