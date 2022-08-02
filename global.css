@@ -185,4 +185,24 @@ dp-full-hero {
 
 /************* Tablet range 600px - 1200px *************************/
 
+@media screen and (max-width: 1200px) {
+  h2.title {
+    font-size: var(--medium-font-size-2);
+  }
+
+  .text {
+    font-size: var(--medium-font-size-0);
+  }
+}
+
 /************* Mobile range 320px - 600px ***************************/
+
+@media screen and (max-width: 600px) {
+  h2.title {
+    font-size: var(--small-font-size-2);
+  }
+
+  .text {
+    font-size: var(--small-font-size-0);
+  }
+}

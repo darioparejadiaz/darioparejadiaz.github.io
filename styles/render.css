@@ -48,7 +48,21 @@ dp-grid-gallery#gallery-2 {
 
 /*************media queries************************/
 
-/* mobile range 320px - 600px */
+/************* Tablet range 600px - 1200px *************************/
+
+@media screen and (max-width: 1200px) {
+  .title {
+    font-size: var(--medium-font-size-2);
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .title {
+    font-size: var(--small-font-size-2);
+  }
+}
+
+/************* Mobile range 320px - 600px ***************************/
 
 @media screen and (max-width: 600px) {
   .coverflow-swipe-container .swiper-slide {
