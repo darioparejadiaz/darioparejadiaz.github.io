@@ -198,8 +198,27 @@ dp-full-hero {
 /************* Tablet range 600px - 1200px *************************/
 
 @media screen and (max-width: 1200px) {
+  h1.title {
+    font-size: var(--medium-font-size-1);
+  }
+
   h2.title {
     font-size: var(--medium-font-size-2);
+  }
+
+  h3.title {
+    font-size: var(--medium-font-size-3);
+  }
+
+  h4.title {
+    font-size: var(--medium-font-size-4);
+  }
+  h5.title {
+    font-size: var(--medium-font-size-5);
+  }
+
+  h6.title {
+    font-size: var(--medium-font-size-6);
   }
 
   .text {
@@ -210,8 +229,27 @@ dp-full-hero {
 /************* Mobile range 320px - 600px ***************************/
 
 @media screen and (max-width: 600px) {
+  h1.title {
+    font-size: var(--small-font-size-1);
+  }
+
   h2.title {
     font-size: var(--small-font-size-2);
+  }
+
+  h3.title {
+    font-size: var(--small-font-size-3);
+  }
+
+  h4.title {
+    font-size: var(--small-font-size-4);
+  }
+  h5.title {
+    font-size: var(--small-font-size-5);
+  }
+
+  h6.title {
+    font-size: var(--small-font-size-6);
   }
 
   .text {

@@ -1,3 +1,109 @@
 /************* Imports ****************************************/
 
 @import url("/global.css");
+
+/* ******************** Components ********************************** */
+
+dp-header {
+  margin-bottom: 64px;
+}
+
+/* ****************************************************** */
+
+.considerations-section {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  place-items: center;
+}
+
+.considerations-section ol {
+  padding-left: 24px;
+  margin-left: 24px;
+}
+
+/* ****************************************************** */
+
+.contact-section {
+  background-color: var(--cold-gray-4);
+  padding-bottom: 64px;
+
+  margin-bottom: 0;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+}
+
+/* *************************************** */
+
+.email {
+  display: grid;
+  place-items: center;
+}
+
+.email h5 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  margin: 0;
+}
+
+.email .icon {
+  width: 40px;
+}
+
+/* **************************************** */
+
+.social-media {
+  display: grid;
+  place-items: center;
+}
+
+.social-media p {
+  text-align: center;
+}
+
+.social-media-icons-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+}
+
+.social-media-icons-container .icon {
+  width: 32px;
+  cursor: pointer;
+}
+
+/* ************* Media queries ************************ */
+
+/************* Tablet range 600px - 1200px *************************/
+
+@media screen and (max-width: 960px) {
+  .contact-section {
+    grid-template-columns: 1fr;
+  }
+
+  .email h5 {
+    margin-bottom: 64px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  dp-header,
+  .considerations-section {
+    margin-bottom: 24px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .considerations-section {
+    grid-template-columns: 1fr;
+  }
+}
+
+/************* Mobile range 320px - 600px ***************************/
+
+@media screen and (max-width: 360px) {
+  .email .title {
+    font-size: var(--small-text-font-size-0);
+  }
+}
