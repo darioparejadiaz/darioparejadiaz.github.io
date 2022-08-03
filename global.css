@@ -109,6 +109,18 @@ h6 {
   font-size: var(--large-font-size-6);
 }
 
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
+
+ul {
+  list-style: none;
+}
+
 p,
 a,
 li,
@@ -127,7 +139,7 @@ span {
 }
 
 .section {
-  max-width: 1800px;
+  max-width: 1920px;
   padding: 24px;
   margin-left: auto;
   margin-right: auto;

@@ -1,3 +1,49 @@
 /************* Imports ****************************************/
 
 @import url("/global.css");
+
+/* ******************** Components ***************************** */
+
+dp-project-card {
+  --title-font-family: "Cormorant Garamond", serif;
+  --text-font-family: "Raleway", sans-serif;
+}
+
+/**************************** Projects *********************************/
+
+.project-section {
+  display: grid;
+  justify-items: center;
+}
+
+.project-section h2 {
+  text-align: center;
+}
+
+.project-section p {
+  text-align: center;
+}
+
+.projects-cards-container {
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+/* ******************** Media queries *********************** */
+
+/**************** Tablet range 600px - 1200px *****************/
+
+@media screen and (max-width: 920px) {
+  .projects-cards-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .projects-cards-container {
+    grid-template-columns: 1fr;
+  }
+}
