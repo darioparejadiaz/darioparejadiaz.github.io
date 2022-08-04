@@ -3,13 +3,12 @@ class DpFooter extends HTMLElement {
     super();
     this.attachShadow({ mode: "open" });
 
-    this.logo_src = "/components/dp-footer/assets/dario-pareja-sign.png";
     this.flag_src = "/components/dp-footer/assets/co.svg";
     this.copy_right = "Copyright © 2022 Dario Pareja";
   }
 
   static get observedAttributes() {
-    return ["logo_src", "flag_src", "copy_right"];
+    return ["flag_src", "copy_right"];
   }
 
   attributeChangedCallback(attr, oldValue, newValue) {
@@ -24,7 +23,7 @@ class DpFooter extends HTMLElement {
         <section class="info-section">
 
           <div class="logos-container">
-            <img class="logo" src="${this.logo_src}" />
+              <h6 class="logo"><span>D</span>ario <span>P</span>areja<span>.</span></h6>
           </div>
       
           <ul class="site-map">

@@ -4,6 +4,7 @@
   /* Colors */
   --component-background-color: black;
   --text-color: white;
+  --logo-text-color: #ff9500;
 
   /* Desktop font sizes*/
   --text-desktop-font-size: 21px;
@@ -18,6 +19,7 @@
   --note-mobile-font-size: 13px;
 
   /* Font family */
+  --title-font-family: inherit;
   --text-font-family: inherit;
 }
 
@@ -83,9 +85,16 @@ footer {
 }
 
 .logos-container .logo {
-  width: 150px;
+  color: var(--text-color);
+  font-size: 26px;
+  font-family: var(--title-font-family);
+  font-weight: 400;
 
-  display: block;
+  margin: 0;
+}
+
+.logo span {
+  color: var(--logo-text-color);
 }
 
 /************* Site map *******************************/
@@ -153,7 +162,7 @@ footer {
   }
 
   .logos-container .logo {
-    margin: 0 auto;
+    text-align: center;
   }
 }
 

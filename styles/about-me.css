@@ -63,6 +63,14 @@
   margin-top: 64px;
 }
 
+.btn a {
+  color: black;
+}
+
+.btn a:visited {
+  color: black;
+}
+
 .btn img {
   width: 16px;
 }

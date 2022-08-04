@@ -158,6 +158,7 @@ dp-header {
 }
 
 dp-footer {
+  --title-font-family: "Cormorant Garamond", serif;
   --text-font-family: "Raleway", sans-serif;
 
   --text-desktop-font-size: var(--large-font-size-0);
