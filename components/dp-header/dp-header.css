@@ -30,7 +30,7 @@
 
 :host {
   width: 100%;
-  border-bottom: 1px solid #cecece;
+  min-width: 320px;
   box-sizing: border-box;
   display: block;
 }
@@ -64,22 +64,19 @@ ul {
 
 header {
   width: 100%;
+  max-width: 1920px;
+  min-width: 320px;
   padding: 12px;
   background-color: var(--component-background-color);
+  border-bottom: 1px solid #cecece;
   box-sizing: border-box;
 
+  margin: 0 auto;
+
   display: grid;
-  place-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
 
   position: relative;
-}
-
-.header-container {
-  width: 100%;
-  max-width: 1800px;
-
-  display: grid;
-  grid-template-columns: 1fr 5fr 1fr;
 }
 
 /************* Logo *******************************/
@@ -127,7 +124,7 @@ header {
 }
 
 .menu-compressed li:first-child {
-  margin-top: 20px;
+  margin-top: 16px;
 }
 
 /************* Social Media *******************************/
@@ -137,7 +134,7 @@ header {
   align-self: center;
 
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 16px;
 }
 

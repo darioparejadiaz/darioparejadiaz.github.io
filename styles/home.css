@@ -2,12 +2,12 @@
 
 @import url("/global.css");
 
-/* **************** Components ********************* */
-
-/* dp-header {
-  margin-bottom: 24px;
-}
+/************* Components ****************************************/
 
 dp-full-hero {
-  margin-bottom: 56px;
-} */
+  --title-font-family: "Cormorant Garamond", serif;
+  --title-font-size: var(--large-font-size-2);
+
+  --text-font-family: "Raleway", sans-serif;
+  --text-font-size: var(--large-font-size-0);
+}

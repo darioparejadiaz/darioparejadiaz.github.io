@@ -21,30 +21,29 @@ class DpHeader extends HTMLElement {
     const template = document.createElement("template");
     template.innerHTML = `
       <header>
-      <div class="header-container">
+
         <a class="logo-link" href="/index.html"><img class="logo" src="/components/dp-header/assets/dp-icon.png" alt="Logo" /></a>
         <nav class="nav-container">
           <img class="hamburguer-menu" src="/components/dp-header/assets/menu.svg" />
           <ul  class="menu-long">
-            <li><a class="text" href="/pages/web-dev.html">Web Dev</a></li>
-            <li><a class="text" href="/pages/render.html">Renders</a></li>
-            <li><a class="text" href="/pages/photography.html">Photography</a></li>
-            <li><a class="text" href="/pages/about-me.html">About Me</a></li>
+            <li><a class="text" href="/index.html">Home</a></li>
+            <li><a class="text" href="/pages/projects.html">Projects</a></li>
+            <li><a class="text" href="/pages/about-me.html">About</a></li>
             <li><a class="text" href="/pages/contact.html">Contact</a></li>
           </ul>
           <ul  class="menu-compressed">
-            <li><a class="text" href="/pages/web-dev.html">Web Dev</a></li>
-            <li><a class="text" href="/pages/render.html">Renders</a></li>
-            <li><a class="text" href="/pages/photography.html">Photography</a></li>
-            <li><a class="text" href="/pages/about-me.html">About Me</a></li>
+            <li><a class="text" href="/index.html">Home</a></li>
+            <li><a class="text" href="/pages/projects.html">Web Dev</a></li>
+            <li><a class="text" href="/pages/about-me.html">About</a></li>
             <li><a class="text" href="/pages/contact.html">Contact</a></li>
           </ul>
         </nav>
         <ul class="social-container">
-          <a href="https://www.instagram.com/darioparejadiaz/"><img src="/components/dp-header/assets/instagram.svg" alt="instagram" /></a>
-          <a href="https://www.linkedin.com/in/darioparejadiaz/"><img src="/components/dp-header/assets/linkedin.svg" alt="linkedin" /></a>
+        <a href="https://github.com/darioparejadiaz"><img src="/components/dp-header/assets/github.svg" alt="Github" /></a>
+        <a href="https://www.linkedin.com/in/darioparejadiaz/"><img src="/components/dp-header/assets/linkedin.svg" alt="linkedin" /></a>
+        <a href="https://www.instagram.com/darioparejadiaz/"><img src="/components/dp-header/assets/instagram.svg" alt="instagram" /></a>
         </ul>
-      </div>
+
       </header>
       <link rel="stylesheet" href="/components/dp-header/dp-header.css" />
     `;

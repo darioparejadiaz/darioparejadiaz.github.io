@@ -9,11 +9,22 @@ dp-header {
 }
 
 dp-hero {
+  --title-font-family: "Cormorant Garamond", serif;
+  --title-font-size: var(--large-font-size-2);
+  --text-font-family: "Raleway", sans-serif;
+  --text-font-size: var(--large-font-size-0);
+
   position: relative;
   z-index: 1;
 }
 
 dp-grid-gallery {
+  --title-font-size: var(--large-font-size-2);
+  --text-font-size: var(--large-font-size-0);
+
+  --title-font-family: "Cormorant Garamond", serif;
+  --text-font-family: "Raleway", sans-serif;
+
   margin-bottom: 64px;
 }
 

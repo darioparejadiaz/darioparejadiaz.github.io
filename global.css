@@ -140,6 +140,7 @@ span {
 
 .section {
   max-width: 1920px;
+  min-width: 320px;
   padding: 24px;
   margin-left: auto;
   margin-right: auto;
@@ -158,6 +159,7 @@ dp-header {
 
 dp-footer {
   --text-font-family: "Raleway", sans-serif;
+
   --text-desktop-font-size: var(--large-font-size-0);
   --note-desktop-font-size: var(--large-font-size-00);
 
@@ -166,29 +168,6 @@ dp-footer {
 
   --text-mobile-font-size: var(--small-font-size-0);
   --note-mobile-font-size: var(--small-font-size-00);
-}
-
-dp-hero {
-  --title-font-family: "Cormorant Garamond", serif;
-  --title-font-size: var(--large-font-size-2);
-  --text-font-family: "Raleway", sans-serif;
-  --text-font-size: var(--large-font-size-0);
-}
-
-dp-grid-gallery {
-  --title-font-size: var(--large-font-size-2);
-  --text-font-size: var(--large-font-size-0);
-
-  --title-font-family: "Cormorant Garamond", serif;
-  --text-font-family: "Raleway", sans-serif;
-}
-
-dp-full-hero {
-  --title-font-family: "Cormorant Garamond", serif;
-  --title-font-size: var(--large-font-size-2);
-
-  --text-font-family: "Raleway", sans-serif;
-  --text-font-size: var(--large-font-size-0);
 }
 
 /* ********************* Media queries******************************* */
