@@ -33,7 +33,7 @@ class DpHeader extends HTMLElement {
           </ul>
           <ul  class="menu-compressed">
             <li><a class="text" href="/index.html">Home</a></li>
-            <li><a class="text" href="/pages/projects.html">Web Dev</a></li>
+            <li><a class="text" href="/pages/projects.html">Projects</a></li>
             <li><a class="text" href="/pages/about-me.html">About</a></li>
             <li><a class="text" href="/pages/contact.html">Contact</a></li>
           </ul>

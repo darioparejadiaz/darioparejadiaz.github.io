@@ -156,6 +156,11 @@ footer {
     gap: 32px;
   }
 
+  .location-container {
+    width: 100%;
+    text-align: center;
+  }
+
   .logos-container,
   .location-container {
     place-self: center;
