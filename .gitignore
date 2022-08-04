@@ -1,14 +1,17 @@
-/pages/render.html
-/pages/photography.html
+pages/render.html
+pages/photography.html
 
-/styles/render.css
-/styles/photography.css
+styles/render.css
+styles/photography.css
 
-/js/render.js
-/js/render-images.js
+js/render.js
+js/render-images.js
 
-/js/photography.js
-/js/photography-images.js
+js/photography.js
+js/photography-images.js
 
-/components/dp-grid-gallery
-/components/dp-hero
+components/dp-grid-gallery
+components/dp-hero
+
+assets/photos
+assets/renders
