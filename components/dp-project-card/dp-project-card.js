@@ -7,6 +7,7 @@ class DpProjectCard extends HTMLElement {
   static get observedAttributes() {
     return [
       "heading",
+      "app_icon",
       "description",
       "app_url",
       "repository_url",
@@ -23,6 +24,7 @@ class DpProjectCard extends HTMLElement {
     template.innerHTML = `
       <div class="card">
         <h4 class="title">${this.heading}</h4>
+        <img class="app-icon" src="${this.app_icon}" />
         <p class="text">${this.description}</p>
         <div class="btn-container">
           <button class="btn primary-btn"><a href="${this.app_url}" target="_blank">Go to the app</a></button>

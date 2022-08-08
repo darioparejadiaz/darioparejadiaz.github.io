@@ -45,6 +45,7 @@
 
 a {
   text-decoration: none;
+  color: var(--primary-btn-text-color);
 }
 
 .primary-btn a:visited {
@@ -76,15 +77,29 @@ a {
 .card {
   box-sizing: border-box;
   width: 270px;
-  height: 380px;
+  /* height: 380px; */
+  height: 510px;
   padding: 20px;
   border-radius: 10px;
   background-color: var(--component-background-color);
   box-shadow: var(--shadow-elevation-high);
 
   display: grid;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
   justify-items: center;
+  align-items: center;
+}
+
+/* **************** Title ******************* */
+
+.card .title {
+  align-self: start;
+}
+
+/* **************** App icon ******************* */
+
+.app-icon {
+  width: 120px;
 }
 
 /* **************** Buttons ******************* */
@@ -137,7 +152,11 @@ a {
   }
 
   .card {
-    height: 350px;
+    height: 460px;
+  }
+
+  .app-icon {
+    width: 100px;
   }
 }
 
@@ -153,6 +172,6 @@ a {
   }
 
   .card {
-    height: 280px;
+    height: 390px;
   }
 }
