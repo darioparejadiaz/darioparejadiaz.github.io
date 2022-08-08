@@ -25,8 +25,8 @@ class DpProjectCard extends HTMLElement {
         <h4 class="title">${this.heading}</h4>
         <p class="text">${this.description}</p>
         <div class="btn-container">
-          <button class="btn primary-btn"><a href="${this.app_url}">Go to the app</a></button>
-          <button class="btn secondary-btn"><a href="${this.repository_url}"><img src="${this.btn_icon_src}" />Repository</a></button>
+          <button class="btn primary-btn"><a href="${this.app_url}" target="_blank">Go to the app</a></button>
+          <button class="btn secondary-btn"><a href="${this.repository_url}" target="_blank"><img src="${this.btn_icon_src}" />Repository</a></button>
         </div>
       </div>
       <link rel="stylesheet" href="/components/dp-project-card/dp-project-card.css" />

@@ -39,9 +39,9 @@ class DpHeader extends HTMLElement {
           </ul>
         </nav>
         <ul class="social-container">
-        <a href="https://github.com/darioparejadiaz"><img src="/components/dp-header/assets/github.svg" alt="Github" /></a>
-        <a href="https://www.linkedin.com/in/darioparejadiaz/"><img src="/components/dp-header/assets/linkedin.svg" alt="linkedin" /></a>
-        <a href="https://www.instagram.com/darioparejadiaz/"><img src="/components/dp-header/assets/instagram.svg" alt="instagram" /></a>
+        <a href="https://github.com/darioparejadiaz" target="_blank"><img src="/components/dp-header/assets/github.svg" alt="Github" /></a>
+        <a href="https://www.linkedin.com/in/darioparejadiaz/" target="_blank"><img src="/components/dp-header/assets/linkedin.svg" alt="linkedin" /></a>
+        <a href="https://www.instagram.com/darioparejadiaz/" target="_blank"><img src="/components/dp-header/assets/instagram.svg" alt="instagram" /></a>
         </ul>
 
       </header>
