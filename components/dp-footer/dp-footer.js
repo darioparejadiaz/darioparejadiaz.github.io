@@ -4,7 +4,7 @@ class DpFooter extends HTMLElement {
     this.attachShadow({ mode: "open" });
 
     this.flag_src = "/components/dp-footer/assets/co.svg";
-    this.copy_right = "Copyright © 2022 Dario Pareja";
+    this.copy_right = "Copyright © 2023 Dario Pareja";
   }
 
   static get observedAttributes() {

@@ -99,19 +99,32 @@ h5 {
 
 /* *********** Tool Container ************* */
 
-#design-tools-grid-container {
+.grid-container {
   margin-bottom: 64px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
   place-items: center;
   gap: 48px;
 }
 
-#code-tools-grid-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  place-items: center;
-  gap: 48px;
+#frameworks-tools-grid-container {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+#programming-tools-grid-container {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#front-tools-grid-container {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#version-tools-grid-container {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+#design-tools-grid-container {
+  margin-bottom: 0;
+  grid-template-columns: repeat(1, 1fr);
 }
 
 .tool-container {
@@ -139,8 +152,6 @@ h5 {
 
 /* ********************* Media queries ************************ */
 
-/* ********* Desktop range 1200px - 1800px ************** */
-
 /* ********* Tablet range 600px - 1200px ************** */
 
 @media screen and (max-width: 1026px) {
@@ -154,10 +165,6 @@ h5 {
     margin-right: auto;
   }
 
-  #code-tools-grid-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
   #large-personal-img {
     display: none;
   }
@@ -167,23 +174,17 @@ h5 {
   }
 }
 
-@media screen and (max-width: 750px) {
-  #design-tools-grid-container {
-    grid-template-columns: 1fr;
-  }
-}
-
 /* ********* Mobile range 320px - 600px ************** */
 
 @media screen and (max-width: 600px) {
-  #code-tools-grid-container {
-    grid-template-columns: 1fr;
-  }
-
-  #code-tools-grid-container,
+  #frameworks-tools-grid-container,
+  #programming-tools-grid-container,
+  #front-tools-grid-container,
+  #version-tools-grid-container,
   #design-tools-grid-container {
     width: 100%;
     gap: 24px;
+    grid-template-columns: 1fr;
   }
 
   .tool-container {
