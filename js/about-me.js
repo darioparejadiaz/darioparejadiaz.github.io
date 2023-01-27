@@ -5,7 +5,7 @@ const skillsAnchor = document.querySelector("#skills-anchor");
 
 skillsAnchor.addEventListener("click", (e) => {
   e.preventDefault();
-  goToSkillsAnchor.scrollIntoView({
+  skillsAnchor.scrollIntoView({
     behavior: "smooth",
   });
 });
